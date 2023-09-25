@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+       //creating object directly by providing object name
+       
+       person={
+        id:101,
+        name:"Sejal",
+        city:"Pune",
+        age:20
+       }
+
+       document.write(person.id+ "<br> "+person.name+" <br>"+personalbar.city+"<br> "+person.age+"<br>");
+
+       //creating object using instance of object directly
+
+       const employee=new Object();
+       employee.id=200;
+       employee.name="Monika";
+       document.write(employee.id+"<br>"+employee.name)
+
+       //for in loop in js
+       
+       obj={
+        Monika:85,
+        Pranav:90,
+        Thomas:75,
+        Harry:55
+       }
+       for(let i in obj){
+        console.log(i);//inspect-> console
+        console.log(`Marks of ${i} is ${obj[i]}`)
+       }
+
+    </script>
+</body>
+</html>

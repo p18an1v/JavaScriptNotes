@@ -1,0 +1,65 @@
+<!-- 
+    in javascript we have three methods in order to print any statement or message on webpage
+    1.document.write();
+    2.alert();alert is also known as alert dialog box.
+    3.prompt(); to take input fron the user or keyboard.
+    4.console.log(); 
+
+
+    variaables:
+    there are two types of variables in js?
+    global variable:a varibale which ic decalred outside the function is called global variable
+    local variable:a varibale which ic decalred inside the function is called local variable
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    //    document.write("welcome to javscript tutorial" + "<br>" + "hello" + "<br>");
+    //    alert("welcome to javscript tutorial");
+    //    alert("hello guyz!!!!");
+    //    document.write("welcome to cranes");
+
+       var a=10;
+       document.write(a);
+
+       a=200;
+       document.write(a)
+
+       var a="zaiba"
+       document.write(a);
+
+    //    let b=200;
+    //    document.write(b);
+
+    //    let b=87.99;
+
+
+        let r=5;
+        const pi=3.14;
+        let area=pi*r*r;
+           
+        r=34;
+
+        area=pi*r*r;
+        document.write(area);
+
+
+        
+
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+       let class_marks12=[98,78,86,35,65,90,14,34,"not present"];
+       document.write(class_marks12);
+       console.log( typeof class_marks12);
+       console.log( class_marks12[0]);
+       console.log( class_marks12[1]);
+       console.log( class_marks12[2]);
+       console.log( class_marks12[3]);
+       console.log( class_marks12[4]);
+       console.log( class_marks12[5]);
+       console.log( class_marks12[6]);
+       console.log( class_marks12[7]);
+       console.log( class_marks12[8]);
+       console.log( class_marks12[9]);//undefined
+
+       class_marks12[9]="Present";//creating new element in an array;
+       console.log(class_marks12);
+
+       class_marks12[0]=99;//upadting new element in an array;
+       console.log(class_marks12);
+       
+
+
+
+    </script>
+</body>
+</html>

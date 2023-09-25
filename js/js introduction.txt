@@ -1,0 +1,41 @@
+what is Javascript?
+Javascript is a client side scripting language used for creating responsive or intercative websites.
+
+if you wanto run js as backend of your web application:
+we need node js as runtime environment which is built on chromes v8 engine.
+
+there are three ways to add js to your html documents
+1.inline js:javascript code is placed within <head> section
+2.internal js:javascript code is placed within <body> section
+3.external js:
+here we need to create a seperate js file.
+index.js(extension) to save your js file.
+
+what are datatypes
+there re two types of datatypes:
+1.primivite datatype:
+they are predined datatypes:
+
+int,float,char,double,byte,short,string.
+
+2.non primitive datatype:
+they are user defined datatypes:
+arrays,objects,regexpresses.
+
+
+what are variables?
+variable is a container where you can store any type data.
+variable is a name given to memory location.
+
+int _a=10;
+
+4b=10
+
+
+c=20
+
+d=20
+
+a=10;
+b="zaiba";
+c=98.7;

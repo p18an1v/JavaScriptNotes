@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>registration form</title>
+    <style>
+        p {
+            color: rgb(85, 85, 163);
+            text-align: left;
+            background-color: azure;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(138, 39, 39); 
+    background-color: bisque; text-align: center;">Event registration Form</h3>
+    <p> Please Enter the queries currectly</p>
+    <!--Write a html program to create event registration form apply all css inline external internal and valadation also-->
+    <form name="myform" action="#" onsubmit="validation()">
+        <table>
+<table>
+    <tr>
+            <td>>Name :</td>
+            <input type="text" placeholder="Enter your full name" name="fullname" maxlength="50"><br><br>
+            Date of Birth:
+            <input type="date" name="dobofperson"><br><br>
+            Gender :
+            <select id="gender" name="gendermf" >
+                <option value=""> SELECT Your Gender </option>
+                <option value="male"> Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            Age :
+            <input type="number" placeholder="Enter your current age" name="ageofperson"><br><br>
+            Phone Number :
+            <input type="number" placeholder="Current number" name="numberofperson" maxlength="10"><br><br>
+            <input type="submit">
+
+    </form>
+    <script>
+        function validation() {
+        var name = document.myform.fullname.value;
+        var dob = document.myform.dobofperson.value;
+        var gender=document.myform.gendermf.value;
+        var age=document.myform.ageofperson.value;
+        var phone =document.myform.numberofperson.value;
+        if(name==null || name.length<1){
+            alert("enter name it can't be null ");
+            return false;
+        }
+        }
+    </script>
+</body>
+
+</html>

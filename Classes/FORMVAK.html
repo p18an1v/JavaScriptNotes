@@ -1,0 +1,25 @@
+<html>
+<script>
+    function validataform() {
+        var name = document.myform.uname.value;//Sejal
+        var password = document.myform.pwd.value;
+
+        if (name == null || name.length<1) {//name==""
+            alert("Name can't be blank");
+            return false;
+        }
+        else if (password.length < 8) {
+            alert("Password must be at least 8 characters long");
+            return false;
+        }
+    }
+</script>
+
+<body>
+    <form name="myform" action="#" onsubmit="validataform()" ;>
+        Name: <input type="text" name="uname"><br><br>
+        Password: <input type="password" name="pwd"><br><br />
+        <input type="submit">
+    </form>
+</body>
+</html>

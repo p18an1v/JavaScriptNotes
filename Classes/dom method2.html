@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color: rgb(81, 173, 173);" id="p1"></h3>
+    <script>
+        function printMail()
+        {
+            //document.form.uname(for field).value;
+            var emailadd=document.myForm.mail.value;
+            document.getElementById("p1").innerHTML="Your"+" "+emailadd+" "+ "has been logged in";
+        }
+    </script>
+    <form name="myForm">
+        <label>Email :</label>
+        <input type="email" name="mail" placeholder="enter your email id"><br><br>
+        <label>Password :</label>
+        <input type="password" name="pwd" placeholder="enter your password">
+        <input type="button" value="click" onclick="printMail()">
+    </form>
+</body>
+</html>

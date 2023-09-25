@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[1,3,56,87,234,980,345,67,12,44];
+
+        console.log(num.length);
+        console.log(num.toString());
+
+         //toString()
+        let a=num.toString();
+        console.log( typeof a,num);
+
+        // join() method
+     console.log(num.join("*"));
+
+        //pop() method:pop methods removes last element from an array
+        // it returns the poppped out element
+       let r= num.pop();
+       console.log(r,num);
+
+       //push method():pudh method will add last element into an array
+    //    it will return length of new array
+
+      let r1= num.push(100);
+       console.log(r1,num);
+
+
+       //shift:it removes first element of an array
+        // and unshift:it add first element to an array.
+
+        let s1= num.shift();
+       console.log(s1,num);
+
+       let s2= num.unshift("hello");
+       console.log(s2,num);
+
+       let fruits=["apple","mango","kiwi","banana","watermelon"];
+         delete fruits[2];
+         console.log(fruits);
+
+        //  concat()
+//  sort() method
+        // compare=(a,b)=>
+        // {
+        //    return b-a;
+        // }
+                
+        let num1=[6,7,34,89,08,123,23,5687,7658,1];
+        // num1.sort(compare);
+        // document.write(num1);
+
+        // splice and slice
+
+        // num1.splice(start,delete,replace);
+        num1.splice(4,5,123,345,456,567,7654,3456,678,3456);
+        console.log(num1);
+
+        replace();
+        reverse();
+        concat();
+
+
+
+ 
+    </script>
+</body>
+</html>

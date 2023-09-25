@@ -1,0 +1,34 @@
+<!-------IN .HTML ----------->
+<script>  
+function matchPass()
+{
+var firstpassword=document.f1.password1.value;
+var secondpassword=document.f1.password2.value;
+
+if(firstpassword==secondpassword)
+{  
+alert("password matched");
+return true;
+}
+else
+{
+alert("password must be same!");  
+return false;
+}
+} 
+</script>
+<form name="f1" action="#" onsubmit="matchPass()">
+<table>
+<tr>  
+<td>Password:</td>
+<td><input type="password" name="password1"/></td>
+</tr><br/>
+<tr>
+<td>Re-enter Password:</td>
+<td><input type="password" name="password2"/></td><br/>
+</tr>
+<tr>
+<td><input type="submit"></td>
+</tr>
+</table>
+</form>

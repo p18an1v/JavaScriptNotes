@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Syntax
+        class Employee{
+            eid="";
+            ename=" ";
+            eage=0;
+            constructor(eid,ename,eage){//local var
+                this.eid=eid;//local to instance var with this keyword
+                this.ename=ename;
+                this.eage=eage;
+            }
+            printDetails(){
+                document.write(this.eid+" "+this.ename+" "+ this.eage+"<br>");
+            }
+        }
+        const e1=new Employee(101,"Monika",21);
+        const e2=new Employee(102,"Maansi",22);
+        //document.write(e1.eid+"<br>"+e1.ename+"<br>"+e1.eage+"<br>");
+        e1.printDetails();
+        e2.printDetails();
+    </script>
+</body>
+</html>

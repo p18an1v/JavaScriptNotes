@@ -1,0 +1,27 @@
+<html>
+<script>
+function validateemail()
+{
+var x=document.myform.email.value;    //zaiba.123@gmail.com  x=19
+var atposition=x.indexOf("@"); //9
+var dotposition=x.indexOf("."); //15
+                                  
+if (atposition<1 || dotposition<atposition+2|| dotposition+2>=x.length)
+{       //9<1    || 15<11                   ||  17>=19
+alert("Please enter a valid e-mail address");  
+return false;
+}
+else
+{
+alert("email is correct");
+return true;
+}  
+}  
+</script>          
+<body>
+<form name="myform" onsubmit="return validateemail();">
+Email: <input type="text" name="email"><br/>
+       <input type="submit" value="register">
+</form>
+</body>
+</html>

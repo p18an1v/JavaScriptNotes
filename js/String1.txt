@@ -1,0 +1,47 @@
+<!-- 
+    what is String?
+    String is collection of characters.
+    string holds text values and also helps in manipulating text.
+    Strings are immutable which means value of string cant be changed.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name="zaiba";
+        document.write(name + "<br>");
+
+
+        //creating a string using instance of String.
+
+
+        let name1=new String("chandrashekar");
+        document.write(name1 + "<br>");
+
+        //template literals
+
+        let boy1="manoj";
+        let boy2="chandrashekar"
+        //boy 1 is a freind of boy2 
+        //manoj is a freind of chnadrashekar
+
+        // document.write(boy1 + ""+ "is a frend of "+ ""+ boy2);
+
+ // you can use variables directly inside template  literal which is also known as String Interpolation
+        let sentence='${boy1} is friend of ${boy2}';
+        document.write(sentence);
+    
+      let uname='zaiba Afreen ';
+ document.write(uname);
+
+    </script>
+</body>
+</html>

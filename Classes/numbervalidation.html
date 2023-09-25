@@ -1,0 +1,20 @@
+<script>
+    function validate(){
+        var num=document.myform.number.values;
+
+        if(isNaN(num))
+        {
+            document.getElementById("numloc").innerHTML="Enter Numeric value only";
+            return false;
+        }
+        else{
+            alert("you have entered number successfully");
+            return true;
+        }
+    }
+</script>
+<form name="myform" onsubmit="return validate()">
+Number :<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="735-090-7541" name="number">
+<span id="numloc"></span><br>
+<input type="submit">
+</form>

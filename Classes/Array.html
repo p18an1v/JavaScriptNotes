@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var class_marks=[98,76,34,98,100,34,96,"present"];
+        console.log(class_marks);
+        console.log(class_marks[5]);
+        //for(let i in class_marks){
+           // console.log(i);     
+       // }
+        class_marks[9]=110;
+        console.log(class_marks);// adding new element to array
+        class_marks[0]=200;
+        console.log(class_marks); // updating new element to array
+        let num=[5,76,34,67,4,100,78,55]
+        console.log(num.length);
+        console.log(num.toString());
+
+        //tostring
+        let a=num.toString();
+        console.log(typeof a,class_marks);
+
+        //join() method
+        console.log(num.join("*"));
+
+         //pop() method:pop methods removes last element from an array
+        // it returns the poppped out element
+        let r= num.pop();
+       console.log(r,num);
+
+
+
+     </script>
+</body>
+</html>

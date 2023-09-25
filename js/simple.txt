@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scripts, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj={
+           harry:85,
+           zaiba:98,
+           chand:34,
+           tara:56,
+           manoj:98
+        }
+
+        for(let o in obj)
+        {
+            console.log(o);
+            console.log("marks of" + "" + o + "" + "are" + "" + obj[o] + "<br>");
+        }
+
+        for(let b of "harry")
+        {
+        console.log(b);
+            
+        }
+
+
+        class Person
+        {
+            constructor(id,name,age)
+        
+            {
+                 this.id=id;
+                 this.name=name;
+                 this.age=age;
+            }
+
+
+        }
+
+
+        const p1=new Person(101,"zaiba",24);
+        document.write(p1.id,p1.name,p1.age);
+
+
+       
+       e1=new Object();
+       e1.id=100;
+        document.write(e1.id);
+       
+    </script>
+</body>
+</html>

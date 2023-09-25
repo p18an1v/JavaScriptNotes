@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body{
+            background-image: url("scenery.jpg");
+            background-repeat:no-repeat ;
+            background-size:cover;
+            background-position:(100%,100%);
+        }
+            
+        
+        .navbar
+        {
+            background-color:black;
+            border-radius: 30px;
+            width:100%;
+    
+        }
+        .navbar ul{
+            overflow:hidden;
+        }
+        .navbar li{
+            float:left;
+            list-style-type: none;
+            font-size:1.5rem;
+            padding:3px 12px;
+            margin:10px;
+            
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+      .search
+      {
+        float:right;
+        padding:10px;
+      }
+       
+      .search input{
+            background-color: gold;
+            border-radius: 30px;
+            color:red;
+            padding:5px;
+      }
+      .search label 
+      {
+        color: red !important;;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Prodcuts</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="search">
+                <label>Search:</label>
+                <input type="search" placeholder="serach your webiste">
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>

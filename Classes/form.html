@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h3{
+            color: rgb(215, 83, 83);
+            background-color: rgba(250, 235, 215, 0.834);
+            border-radius: 30px;
+            text-align: center;
+        }
+        label{
+            color: rgba(3, 3, 3, 0.466);
+            background-color: rgb(243, 239, 235);
+            font-size: large;
+            size: 100%;
+        }
+        button{
+            color: rgb(32, 24, 24);
+            background-color: rgb(90, 220, 199);
+            font-size: larger;
+            font-style: bold;
+            padding: 12px 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        form{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form>
+        <label>FirstName:</label>
+        <input type="text" placeholder="Enter your firstname" maxlength="50"required ></required><br><br>
+        <label>LastName:</label>
+        <input type="text" placeholder="Enter your last name" maxlength="10" required><br><br>
+        <label>Email :</label>
+        <input type="email" placeholder="Enter your personal Email " maxlength="100" required><br><br>
+        <label>Age :</label>
+        <input type="number" placeholder="Your current age" maxlength="3"><br><br>
+        <label>Date of Birth:</label>
+        <input type="date" placeholder="Insert your dob" required><br><br>
+        <label>Address</label>
+        <input type="text" placeholder="Enter your local address" maxlength="200" required><br><br>
+        <label>Blood Group</label>
+        <input type="text" placeholder="Enter your blood group" maxlength="5" required><br><br>
+        <button type="submit">Submit</button><button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

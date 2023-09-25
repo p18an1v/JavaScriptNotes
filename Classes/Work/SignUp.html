@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up / Login Form</title>
+	<style>
+		form {
+			margin: auto;
+			width: 50%;
+			border: 1px solid #ccc;
+			padding: 10px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+		}
+		label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 16px;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		#signup {
+			display: none;
+		}
+		h2 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sign Up / Login Form</h1>
+	<h2 id="login-link">Already have an account? Log in here.</a></h2>
+	<h2 id="signup-link">Don't have an account yet? Sign up here.</a></h2>
+	<form id="login">
+		<h2>Log In</h2>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" minlength="8" required>
+
+		<button type="submit">Log In</button>
+	</form>
+	<form id="signup">
+		<h2>Sign Up</h2>
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname" required>
+
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" minlength="8" required>
+
+		<button type="submit">Sign Up</button>
+	</form>
+</body>
+</html>

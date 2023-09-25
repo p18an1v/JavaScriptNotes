@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        marquee
+        {
+            font-size:20px;
+            color:red;
+            /* font-weight:700; */
+            background-color:chartreuse;
+            border:5px solid aqua;
+            border-radius:15px;
+            height:30px;
+            min-width:400px:
+            text-align:center;
+            text-decoration-line:underline;
+            text-decoration-style:dotted
+
+        }
+    </style>
+    
+</head>
+<body>
+    <marquee direction="right" scrollamount="40ms" behavior="alternate" >Employee Registration Form:</marquee><br><br>
+   <table></table>
+    <form action="response.html">
+     <tr>
+        <td><label>FirstName:</label></td>
+        <input type="text" name="fname" placeholder="enter your firstname" maxlength="5" required> <br><br>
+     </tr>
+        <label>LastName:</label>
+        <input type="text" name="lname" placeholder="enter your lastname" maxlength="10" required> <br><br>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="enter your password" required><br><br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="enter your email" required><br><br>
+        <label>Mobile Number:</label>
+        <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-8753" name="mobile" required><br><br>
+        <label>Address:</label>
+        <textarea></textarea><br><br>
+        <label>Salary:</label>
+        <input type="number"><br><br>
+        <label>DOB</label>
+        <input type="datetime-local"><br><br>
+        <!-- <input type="week">
+        <input type="month">
+        <input type="file" multiple>
+        <input type="search">
+        <input type="color">
+        <input type="image" src="button.png"> -->
+       <label>Gender:</label>
+       <input type="radio" name="gender">Male
+       <input type="radio" name="gender">Female
+       <input type="radio" name="gender">Others<br><br>
+
+       <label>Hobbies:</label>
+       <input type="checkbox" checked>Cricket
+       <input type="checkbox">Badminton
+       <input type="checkbox">Throwball
+       <input type="checkbox">Football<br><br>
+
+
+       <label>Select your country:</label>
+       <select size="4" multiple>
+        <option>---select your country---</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Canada</option>
+        <option selected>Germany</option>
+        <option>Paris</option>
+       </select><br><br>
+
+        <button>submit</button>
+        <!-- <input type="button" value="register">
+        <input type="submit"> -->
+        <input type="reset">
+    </form>
+
+
+    
+</body>
+</html>

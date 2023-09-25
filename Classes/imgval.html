@@ -1,0 +1,44 @@
+<script>
+    function validate()
+    {
+        var name=document.f1.uname.value;
+        var password=document.f1.password.value;
+        var status=false;
+
+        if(name.length<1){
+            document.getElementById("nameloc").innerHTML="<img src='lock.png'/>Please enter your name";
+        }
+        else{
+            document.getElementById("nameloc").innerHTML="<img src='lock.png'/>";
+
+        }
+        if(password.length<6)
+        {
+            document.getElementById("passwordloc").innerHTML="<img src='name.jpeg'/>Password must be at least 6 char long";
+
+        }
+        else{
+            document.getElementById("passwordloc").innerHTML="<img src='lock.jpeg'/>";
+        }
+        return status;
+        }
+</script>
+<form name="f1" action="#" onsubmit="return validate()">
+<table>
+    <tr>
+        <td>Enter Name:</td>
+        <td><input type="text" name="uname"/>
+        <span id="nameloc"></span>
+    </td>
+    </tr>
+    <form name="f1" action="#" onsubmit="return validate()">
+        <table>
+            <tr>
+                <td>Enter Password:</td>
+                <td><input type="text" name="password"/>
+                <span id="passwordloc"></span>
+            </td>
+            </tr>
+<td><input type="submit"></td>
+</table>
+</form>

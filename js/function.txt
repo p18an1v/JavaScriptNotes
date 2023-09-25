@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="external.js"></script>
+</head>
+<body>
+    <script>
+         
+         var data=300;//global variable
+        //  document.write(data);
+        function a()
+        {
+            //body of function
+            //code to be executed
+            let data="chnadrashekar"
+            var a=900;//local variable
+            alert(window.data);
+            alert(a);
+        }
+
+        function b()
+        {
+            //body of function
+            //code to be executed
+            let data="chnadrashekar"
+            var a=900;//local variable
+            alert(window.data);
+            alert(a);
+        }
+        // a();
+        sum();
+        sum1(10,20);
+    </script>
+
+    <form>
+        <button onclick="b()">click1</button>
+        <button onmouseover="fun()">click2</button>
+
+    </form>
+</body>
+</html>
